@@ -1,0 +1,243 @@
+html {
+  font-family: 'Roboto', 'sans-serif';
+  width: 100%;
+  height: 100%; }
+  html body {
+    background: black;
+    color: silver;
+    font-size: 150%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%; }
+    html body header {
+      display: table;
+      position: relative;
+      width: 100%;
+      height: 100%; }
+      html body header section#headerContent {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle; }
+        html body header section#headerContent h1 {
+          color: black;
+          font-family: 'Asar', 'sans-serif';
+          font-size: 400%;
+          text-shadow: 1px 1px 10px silver; }
+        html body header section#headerContent img {
+          width: 30%; }
+        html body header section#headerContent .socialMedia {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: 0 auto; }
+          html body header section#headerContent .socialMedia a {
+            margin: 0 1%; }
+    html body .container-table {
+      display: table;
+      width: 100%;
+      height: 100%; }
+      html body .container-table section {
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle; }
+      html body .container-table section#skills .skillbar {
+        position: relative;
+        display: block;
+        margin-bottom: 15px;
+        width: 80%;
+        margin: 4px auto;
+        background: #eee;
+        height: 35px;
+        border-radius: 3px; }
+        html body .container-table section#skills .skillbar .skillbar-title {
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-weight: bold;
+          font-size: 13px;
+          color: #fff; }
+          html body .container-table section#skills .skillbar .skillbar-title span {
+            display: block;
+            background: rgba(0, 0, 0, 0.1);
+            padding: 0 20px;
+            height: 35px;
+            line-height: 35px; }
+        html body .container-table section#skills .skillbar .skillbar-bar {
+          height: 35px;
+          width: 0px; }
+        html body .container-table section#skills .skillbar .skill-bar-percent {
+          position: absolute;
+          right: 10px;
+          top: 0;
+          font-size: 11px;
+          height: 35px;
+          line-height: 35px;
+          color: #444;
+          color: rgba(0, 0, 0, 0.4); }
+        html body .container-table section#skills .skillbar .skillHTML {
+          background: #F16529; }
+        html body .container-table section#skills .skillbar .skillCSS {
+          background: #29A8E0; }
+        html body .container-table section#skills .skillbar .skillJS {
+          background: #FBC654; }
+        html body .container-table section#skills .skillbar .skillPHP {
+          background: #6C7FB9; }
+        html body .container-table section#skills .skillbar .skillSQL {
+          background: linear-gradient(90deg, #016190 50%, #E89301 50%);
+          float: left; }
+      html body .container-table section#aboutMe a {
+        color: white; }
+    @media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+      html body header.header {
+        background-image: url("../Assets/Images/header@2x.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; }
+      html body section.aboutMe {
+        background-image: url("../Assets/Images/about@2x.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; }
+      html body section.skills {
+        background-image: url("../Assets/Images/skills@2x.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; }
+      html body section.portfolio {
+        background-image: url("../Assets/Images/portfolio@2x.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; }
+      html body section.contact {
+        background-image: url("../Assets/Images/contact@2x.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; } }
+    @media (min-width: 300px) {
+      html body header.header {
+        background-image: url("../Assets/Images/headerMobile.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; }
+      html body section.aboutMe {
+        background-image: url("../Assets/Images/aboutMobile.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; }
+      html body section.skills {
+        background-image: url("../Assets/Images/skillsMobile.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; }
+      html body section.portfolio {
+        background-image: url("../Assets/Images/portfolioMobile.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; }
+      html body section.contact {
+        background-image: url("../Assets/Images/contactMobile.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; }
+      html body h2 {
+        font-size: 250%;
+        text-shadow: 1px 1px 10px black; }
+      html body p {
+        margin: 10%;
+        font-size: 120%;
+        text-shadow: 1px 1px 10px black; }
+      html body header section#headerContent h1 {
+        font-size: 300%; }
+      html body header section#headerContent img {
+        width: 60%; } }
+    @media (min-width: 520px) {
+      html body header.header {
+        background-image: url("../Assets/Images/headerTablet.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; }
+      html body section.aboutMe {
+        background-image: url("../Assets/Images/aboutTablet.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; }
+      html body section.skills {
+        background-image: url("../Assets/Images/skillsTablet.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; }
+      html body section.portfolio {
+        background-image: url("../Assets/Images/portfolioTablet.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; }
+      html body section.contact {
+        background-image: url("../Assets/Images/contactTablet.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; }
+      html body h2 {
+        font-size: 250%;
+        text-shadow: 1px 1px 10px black; }
+      html body p {
+        margin: 10%;
+        font-size: 120%;
+        text-shadow: 1px 1px 10px black; }
+      html body header section#headerContent h1 {
+        font-size: 300%; }
+      html body header section#headerContent img {
+        width: 60%; } }
+    @media (min-width: 1024px) {
+      html body header.header {
+        background-image: url("../Assets/Images/header@1x.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; }
+      html body section.aboutMe {
+        background-image: url("../Assets/Images/about@1x.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; }
+      html body section.skills {
+        background-image: url("../Assets/Images/skills@1x.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; }
+      html body section.portfolio {
+        background-image: url("../Assets/Images/portfolio@1x.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; }
+      html body section.contact {
+        background-image: url("../Assets/Images/contact@1x.png");
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: bottom, left; }
+      html body h2 {
+        font-size: 250%;
+        text-shadow: 1px 1px 10px black; }
+      html body p {
+        margin: 1% 10%;
+        font-size: 120%;
+        text-shadow: 1px 1px 10px black; }
+      html body header section#headerContent h1 {
+        font-size: 300%; }
+      html body header section#headerContent img {
+        width: 40%; }
+      html body section#skills h2 {
+        color: silver;
+        margin-bottom: 0; } }
+    @media (min-width: 1440px) {
+      html body header section#headerContent h1 {
+        font-size: 300%; }
+      html body header section#headerContent img {
+        width: 30%; } }
+    @media (min-width: 2000px) {
+      html body header section#headerContent h1 {
+        font-size: 500%; }
+      html body header section#headerContent img {
+        width: 20%; } }
+    html body footer.navbar {
+      margin: 0; }

@@ -1,0 +1,260 @@
+@charset "UTF-8";
+// 4K 4096 × 2160
+@mixin widthHeight($x) {
+    width: $x;
+    height: $x;
+}
+
+@mixin marginPadding($y) {
+    margin: $y;
+    padding: $y;
+}
+
+@mixin setBackground($a, $b, $c, $d, $e) {
+    header.header {
+        background-image: url($a);
+        background-repeat: no-repeat!important;
+        background-size: cover!important;
+        background-position: bottom, left;
+    }
+    section.aboutMe {
+        background-image: url($b);
+        background-repeat: no-repeat!important;
+        background-size: cover!important;
+        background-position: bottom, left;
+    }
+    section.skills {
+        background-image: url($c);
+        background-repeat: no-repeat!important;
+        background-size: cover!important;
+        background-position: bottom, left;
+    }
+    section.portfolio {
+        background-image: url($d);
+        background-repeat: no-repeat!important;
+        background-size: cover!important;
+        background-position: bottom, left;
+    }
+    section.contact {
+        background-image: url($e);
+        background-repeat: no-repeat!important;
+        background-size: cover!important;
+        background-position: bottom, left;
+    }
+}
+
+$x:100%;
+$y:0;
+html {
+    font-family: 'Roboto', 'sans-serif';
+    @include widthHeight($x);
+    body {
+        background: black;
+        color: silver;
+        font-size: 150%;
+        @include marginPadding($y);
+        @include widthHeight($x);
+        header {
+            display: table;
+            position: relative;
+            @include widthHeight($x);
+            section#headerContent {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+                h1 {
+                    color: black;
+                    font-family: 'Asar', 'sans-serif';
+                    font-size: 400%;
+                    text-shadow: 1px 1px 10px silver;
+                }
+                img {
+                    width: 30%;
+                }
+                .socialMedia {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: 0 auto;
+                    a {
+                        margin: 0 1%;
+                    }
+                }
+            }
+        }
+        .container-table {
+            display: table;
+            @include widthHeight($x);
+            section {
+                text-align: center;
+                display: table-cell;
+                vertical-align: middle;
+            }
+            section#skills {
+                .skillbar {
+                    position: relative;
+                    display: block;
+                    margin-bottom: 15px;
+                    width: 80%;
+                    margin: 4px auto;
+                    background: #eee;
+                    height: 35px;
+                    border-radius: 3px;
+                    .skillbar-title {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-weight: bold;
+                        font-size: 13px;
+                        color: #fff;
+                        span {
+                            display: block;
+                            background: rgba(0, 0, 0, 0.1);
+                            padding: 0 20px;
+                            height: 35px;
+                            line-height: 35px;
+                        }
+                    }
+                    .skillbar-bar {
+                        height: 35px;
+                        width: 0px;
+                    }
+                    .skill-bar-percent {
+                        position: absolute;
+                        right: 10px;
+                        top: 0;
+                        font-size: 11px;
+                        height: 35px;
+                        line-height: 35px;
+                        color: #444;
+                        color: rgba(0, 0, 0, 0.4);
+                    }
+                    .skillHTML {
+                        background: #F16529;
+                    }
+                    .skillCSS {
+                        background: #29A8E0;
+                    }
+                    .skillJS {
+                        background: #FBC654;
+                    }
+                    .skillPHP {
+                        background: #6C7FB9;
+                    }
+                    .skillSQL {
+                        background: linear-gradient( 90deg, #016190 50%, #E89301 50%);
+                        float: left;
+                    }
+                }
+            }
+            section#aboutMe {
+                a {
+                    color: white;
+                }
+            }
+        }
+        @media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+            @include setBackground("../Assets/Images/header@2x.png", "../Assets/Images/about@2x.png", "../Assets/Images/skills@2x.png", "../Assets/Images/portfolio@2x.png", '../Assets/Images/contact@2x.png');
+        }
+        @media (min-width: 300px) {
+            @include setBackground("../Assets/Images/headerMobile.png", "../Assets/Images/aboutMobile.png", "../Assets/Images/skillsMobile.png", "../Assets/Images/portfolioMobile.png", '../Assets/Images/contactMobile.png');
+            h2 {
+                font-size: 250%;
+                text-shadow: 1px 1px 10px black;
+            }
+            p {
+                margin: 10%;
+                font-size: 120%;
+                text-shadow: 1px 1px 10px black;
+            }
+            header {
+                section#headerContent {
+                    h1 {
+                        font-size: 300%;
+                    }
+                    img {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+        @media (min-width: 520px) {
+            @include setBackground("../Assets/Images/headerTablet.png", "../Assets/Images/aboutTablet.png", "../Assets/Images/skillsTablet.png", "../Assets/Images/portfolioTablet.png", '../Assets/Images/contactTablet.png');
+            h2 {
+                font-size: 250%;
+                text-shadow: 1px 1px 10px black;
+            }
+            p {
+                margin: 10%;
+                font-size: 120%;
+                text-shadow: 1px 1px 10px black;
+            }
+            header {
+                section#headerContent {
+                    h1 {
+                        font-size: 300%;
+                    }
+                    img {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+        @media (min-width: 1024px) {
+            @include setBackground("../Assets/Images/header@1x.png", "../Assets/Images/about@1x.png", "../Assets/Images/skills@1x.png", "../Assets/Images/portfolio@1x.png", '../Assets/Images/contact@1x.png');
+            h2 {
+                font-size: 250%;
+                text-shadow: 1px 1px 10px black;
+            }
+            p {
+                margin: 1% 10%;
+                font-size: 120%;
+                text-shadow: 1px 1px 10px black;
+            }
+            header {
+                section#headerContent {
+                    h1 {
+                        font-size: 300%;
+                    }
+                    img {
+                        width: 40%;
+                    }
+                }
+            }
+            section#skills {
+                h2 {
+                    color: silver;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        @media (min-width: 1440px) {
+            header {
+                section#headerContent {
+                    h1 {
+                        font-size: 300%;
+                    }
+                    img {
+                        width: 30%;
+                    }
+                }
+            }
+        }
+        @media(min-width: 2000px) {
+            header {
+                section#headerContent {
+                    h1 {
+                        font-size: 500%;
+                    }
+                    img {
+                        width: 20%;
+                    }
+                }
+            }
+        }
+        footer.navbar {
+            margin: 0;
+        }
+    }
+}
